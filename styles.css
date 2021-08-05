@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(85, 113, 165);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta{
+    background-image: url(assets/images/blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+    transform-style: preserve-3d;
+    transition: 1.5s ease;
+
+}
+
+
+
+.trasero, .frente{
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+}
+
+.trasero{
+    transform: rotateY(180deg);
+    position: absolute;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.tarjeta:hover{
+    opacity: 1;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.frente__title{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.frente__sim{
+    width: 75px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.frente__number{
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    justify-content: space-around;
+    letter-spacing: 5px;
+    font-weight: 600;    
+}
+
+.frente__vencimiento{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.vencimiento{
+    margin-left: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.vence{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.frente__abajo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 19%;
+}
+
+.nombre{
+    color: white;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.visa{
+    margin-right: 10px;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 90px;
+}
+
+.title_trasero{
+    color: white;
+}
+
+.trasero__magnetica{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(179, 179, 179);
+    margin-top: 25px;
+}
+
+.trasero__firma{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.firma{
+    background-image: url(assets/images/polygon-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    margin-left: 15px;
+    background-color: rgb(253, 253, 253);
+}
+
+.cv{
+    background-color: rgb(253, 253, 253);
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.cheems{
+    margin-top: 120px;
+    margin-left: 535px;
+    width: 10%;
+    opacity: .5;
+}
+
+
+
